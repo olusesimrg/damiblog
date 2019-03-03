@@ -37,9 +37,8 @@
         margin-top: 280px;
         margin-left: 20px;
     }
-    .post-title{
-      font-weight: 600
-    }
+    .post-title, .brand-title { font-weight: 600 }
+
     .advert{
       height: 50px;
       border: 1px solid #f96332;
