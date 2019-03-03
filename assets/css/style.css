@@ -39,6 +39,10 @@
     }
     .post-title, .brand-title { font-weight: 600 }
 
+    .index-page .page-header .category-absolute{
+      left: 0
+    }
+
     .advert{
       height: 50px;
       border: 1px solid #f96332;
@@ -63,6 +67,7 @@
     .image-container.image-left{
       display: none;
     }
+    .section-story-overview .image-container:nth-child(2){margin-top:0}
     .section-story-overview .side-container{
       display:none;
     }
