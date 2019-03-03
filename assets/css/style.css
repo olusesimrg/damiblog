@@ -53,8 +53,10 @@
       text-align: center;
     }
   @media screen and (max-width: 767px) {
+    /* solution to the :nth-child() problem faced
+    https://learn.shayhowe.com/advanced-html-css/complex-selectors/ */
     #about .col-md-4:nth-child(3n) .team-thumb,
-    #blog .col-md-4:nth-child(2n) .team-thumb {
+    #blog .col-md-4:nth-child(3n + 2) .team-thumb {
       display: flex;
       -webkit-box-orient: vertical;
       flex-direction: column-reverse;
@@ -86,6 +88,9 @@
       margin-bottom: 10px;
     }
 }
+  footer{
+    margin-top: 70px;
+  }
   .team-thumb-up:after {
     display: block;
     margin: 0 auto;
@@ -136,13 +141,6 @@
   .team-thumb img {
     width: 100%;
   }
-
-.blog-content{
-	background: blue;
-}
-.blog-sidebar{
-	background: green;
-}
 
 .search-form-container .search-form {
     width: 100%;
@@ -245,6 +243,15 @@
   content: '';
   display: block;
   }
+  /* .section-blog-main::after {
+    -webkit-clip-path: polygon(0 0,0 100%,100% 0);
+    clip-path: polygon(0 0,0 100%,100% 0);
+    background-color: #fff;
+    height: 257px;
+    width: 100%;
+    content: '';
+    display: block;
+} */
   .section-blog{
   position: relative;
   z-index: 15;
