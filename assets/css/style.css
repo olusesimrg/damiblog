@@ -42,12 +42,42 @@
     .index-page .page-header .category-absolute{
       left: 0
     }
-
+/* aside advert in pages */
     .advert{
-      height: 50px;
-      border: 1px solid #f96332;
       margin-bottom: 20px;
+      width:230px;
+      float: right;
     }
+    .aside-advert {
+      background: linear-gradient(-22deg, #75cec0 0%, #70afff 100%);
+      color: white;
+      border-radius: 5px;
+      position: relative;
+    }
+    .info-card-inner {
+      padding: 9px;
+      padding-top: 145px;
+  }
+  .aside-advert img.cover {
+    width: 130px;
+    position: absolute;
+    top: -60px;
+    right: -12px;
+} .btn-ful{
+    width: 100%;
+}
+  .aside-advert h2 {
+    color: white;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .info-card-inner p.info-card-copy {
+    font-size: 14px;
+}
+  /* advert end */
     .title-blog{
       font-weight: 700;
       text-align: center;
